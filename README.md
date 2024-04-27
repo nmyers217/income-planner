@@ -20,6 +20,10 @@ This will start the project and watch for changes.
 
 guide here: https://fresh.deno.dev/docs/getting-started
 
+### Environment Variables
+
+You'll need to create a `.env` file by copying the `.env.templaqte` file and providing relevant values. This file is used to store sensitive information like API keys and secrets.
+
 ## Tech Stack
 
 - Typescript on the Deno runtime
