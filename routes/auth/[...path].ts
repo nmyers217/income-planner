@@ -18,7 +18,6 @@ export const handler = async (
       secret,
       adapter: DrizzleAdapter(db),
       providers: [
-        // TODO: add the resend provider for magic link support
         Resend({
           apiKey: Deno.env.get("AUTH_RESEND_KEY"),
           from: Deno.env.get("AUTH_RESEND_EMAIL"),
