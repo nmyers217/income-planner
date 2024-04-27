@@ -1,16 +1,32 @@
-# Fresh project
+# Income Planner
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+This is a toy project where I will try to implement a complex cash flow planner.
 
-### Usage
+## Features
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+- [ ] Define a set of income sources
+- [ ] Define a set of expenses
+- [ ] Plans an investment calendar to maximize passive cash flow using velocity banking
 
-Then start the project:
+## Development
 
-```
+This project is built using Deno and Fresh. To start the project, run the following command:
+
+```bash
 deno task start
 ```
 
-This will watch the project directory and restart as necessary.
+This will start the project and watch for changes.
+
+guide here: https://fresh.deno.dev/docs/getting-started
+
+## Tech Stack
+
+- Typescript on the Deno runtime
+- Deno Deploy
+- Fresh
+- PicoCSS (for a nice HTML/CSS reset)
+- TailwindCSS (because I can't live without it)
+- Turso (sqlite DB)
+- Drizzle ORM
+- Auth.js
