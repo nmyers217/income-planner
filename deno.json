@@ -39,6 +39,7 @@
     "@libsql/client": "npm:@libsql/client",
     "@auth/core": "npm:@auth/core@0.30.0",
     "@auth/drizzle-adaper": "npm:@auth/drizzle-adapter@1.0.0",
+    "@auth/express": "npm:/@auth/express@0.5.4",
     "@auth/express/": "npm:/@auth/express@0.5.4/",
     "$db/": "./db/"
   },

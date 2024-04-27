@@ -1,32 +1,10 @@
 import { FreshContext } from "$fresh/server.ts";
-import { Auth, AuthConfig } from "@auth/core";
-import { DrizzleAdapter } from "@auth/drizzle-adaper";
-import Google from "@auth/express/providers/google";
-import Resend from "@auth/express/providers/resend";
-
-import { db } from "$db/client.ts";
+import { Auth } from "@auth/core";
+import { authConfig } from "../../auth.config.ts";
 
 export const handler = async (
   req: Request,
   _ctx: FreshContext,
 ): Promise<Response> => {
-  const secret = Deno.env.get("AUTH_SECRET");
-  return await Auth(
-    req,
-    {
-      trustHost: true,
-      secret,
-      adapter: DrizzleAdapter(db),
-      providers: [
-        Resend({
-          apiKey: Deno.env.get("AUTH_RESEND_KEY"),
-          from: Deno.env.get("AUTH_RESEND_EMAIL"),
-        }),
-        Google({
-          clientId: Deno.env.get("AUTH_GOOGLE_ID"),
-          clientSecret: Deno.env.get("AUTH_GOOGLE_SECRET"),
-        }),
-      ],
-    } as AuthConfig,
-  );
+  return await Auth(req, authConfig);
 };

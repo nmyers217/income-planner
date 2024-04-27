@@ -6,7 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $auth_path_ from "./routes/auth/[...path].ts";
-import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $greet_index from "./routes/greet/index.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $NameInput from "./islands/NameInput.tsx";
@@ -18,7 +18,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
     "./routes/auth/[...path].ts": $auth_path_,
-    "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/greet/index.tsx": $greet_index,
     "./routes/index.tsx": $index,
   },
   islands: {
