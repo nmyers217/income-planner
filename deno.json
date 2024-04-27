@@ -9,6 +9,7 @@
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update .",
     "migrate": "deno run -A npm:drizzle-kit@0.20.17 generate:sqlite",
+    "migrate:drop": "deno run -A npm:drizzle-kit@0.20.17 drop",
     "migrate:up": "deno run -A db/migrate.ts"
   },
   "lint": {

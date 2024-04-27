@@ -15,6 +15,7 @@ CREATE TABLE `account` (
 );
 --> statement-breakpoint
 CREATE TABLE `session` (
+	`id` text,
 	`sessionToken` text PRIMARY KEY NOT NULL,
 	`userId` text NOT NULL,
 	`expires` integer NOT NULL,

@@ -1,7 +1,5 @@
 import type { Config } from "drizzle-kit";
 
-import "$std/dotenv/load.ts";
-
 export default {
   schema: "./db/schema.ts",
   out: "./drizzle",

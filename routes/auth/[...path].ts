@@ -21,7 +21,7 @@ export const handler = async (
         // TODO: add the resend provider for magic link support
         Resend({
           apiKey: Deno.env.get("AUTH_RESEND_KEY"),
-          from: "support@incomeplanner.com",
+          from: Deno.env.get("AUTH_RESEND_EMAIL"),
         }),
         Google({
           clientId: Deno.env.get("AUTH_GOOGLE_ID"),
